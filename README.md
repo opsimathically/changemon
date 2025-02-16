@@ -5,7 +5,7 @@ Watch objects for changes, and execute callbacks when they do. Take the data fro
 ## Install
 
 ```bash
-npm install @opsimathically/changemon
+npm install changemon
 ```
 
 ## Building from source
@@ -55,16 +55,20 @@ import { applyChange, ChangeMon, changemon_path_t } from 'changemon';
       changemon_ref: ChangeMon<number>
     ) => {
       //
-      // old_val: This is the value prior to the change.
+      // old_val:
+      // This is the value prior to the change.
       //
-      // new_val: This is the value that it will be changed to.
+      // new_val:
+      // This is the value that it will be changed to.
       //
-      // path: this is an array of paths and types to get to the value being changed.
+      // path:
+      // This is an array of paths and types to get to the value being
+      // changed.
       //
       // changemon_ref:
-      // This is a changemon self reference, from which you an access the extra passthrough data.
-      // in this case it's the number 777, in your case, it's an object, or database handles or whatever
-      // you want.
+      // This is a changemon self reference, from which you an access the extra
+      // passthrough data.  In this case it's the number 777, in your case, it's
+      // an object, or database handles or whatever you want.
       //
       // applyChange:
       // this will propagate the current path and changes into an unrelated and
@@ -91,11 +95,11 @@ import { applyChange, ChangeMon, changemon_path_t } from 'changemon';
   const unwatched_original_object = changemon_ref.unwatch(your_watched_object);
 
   // IMPORTANT:
-  // In the console output, do note that "how" property (array), only has values which were changed,
-  // propagated.  Since the some_other_object_you_want_to_also_apply_changes_to object doesn't initially
-  // have any values in it, you will have 4 empty values in the array, and the number 5.  This is by design,
-  // and intentional.  If you want all other values propagated, you'll have to do that in the
-  // change callback.
+  // In the console output, do note that the "how" property (array), only has values which
+  // were changed, propagated.  Since the some_other_object_you_want_to_also_apply_changes_to
+  // object doesn't initially have any values in it, you will have 4 empty values in the array, and
+  // the number 5.  This is by design, and intentional.  If you want all other values propagated,
+  // you'll have to do that in the change callback.
   console.log({
     unwatched_original_object: unwatched_original_object,
     some_other_object_you_want_to_also_apply_changes_to:
