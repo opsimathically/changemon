@@ -1,6 +1,6 @@
 {
   "name": "@opsimathically/changemon",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Monitor objects for changes and run callbacks/apply-changes when change occur.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
