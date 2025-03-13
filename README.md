@@ -1,4 +1,4 @@
-# changemom
+# changemon
 
 Watch objects for changes, and execute callbacks when they do. Take the data from the callbacks and apply those changes to any other objects, or don't. This can be used for auto-updating database records, synchronizing data across the network, and all sorts of other neat things.
 
