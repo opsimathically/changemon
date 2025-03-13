@@ -1,6 +1,6 @@
 {
   "name": "@opsimathically/changemon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Monitor objects for changes and run callbacks/apply-changes when change occur.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -15,6 +15,7 @@
     "monitoring",
     "proxy"
   ],
+  "homepage": "https://github.com/opsimathically/changemon",
   "devDependencies": {
     "@types/node": "^22.13.1",
     "@types/wtfnode": "^0.7.3",
